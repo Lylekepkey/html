@@ -1,0 +1,480 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap')@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap'); */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+    line-height: 1.8;
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* SECTION 1  */
+
+nav {
+    /* margin-left: 85%; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.log-in {
+    list-style-type: none;
+}
+.log-in-1 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.section-1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    align-items: center;
+    /* text-transform: uppercase; */
+}
+.top-section {
+    text-align: center;
+    background:url(../img/header.jpg) 
+    no-repeat center center/cover;
+    margin-top: auto;
+    height: 530px; 
+    /*  */
+    
+}
+.top-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0.76) 15.54%,
+    rgba(0, 0, 0, 0.192) 60.23%,
+    rgba(0, 0, 0, 8e-5) 100%) ;
+}
+
+.section-1 img {
+    width: 230px;
+    margin: 22px 0;
+}
+
+.section-1 h4 {
+    color: #00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+    /* font-weight: ; */
+}
+.heading-1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.heading-2 {
+    font-size: 18px;
+    color: white;
+    margin: 25px 0;
+}
+
+
+.start-butt {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    min-width: 135px;
+    padding: 22px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 13px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.start-butt:hover {
+    opacity: 0.7;
+}
+.start-butt-outline {
+    background-color: none;
+    color: white;
+    border: 1px solid white;
+}
+.start-butt-outline:hover {
+    color: white;
+    background-color: #ccc;
+}
+.start-butt-dark {
+    background-color: black;
+    color: white;
+}
+
+.footer-legal {
+    font-size: 10px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+/* END OF 1st SECTION */
+
+
+/* SUB SECTION */
+.sub-section {
+    display: grid;
+    /* text-align: center; */
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 40px;
+    background: linear-gradient(
+        318.60deg, #0f495c 0%,
+        #0d3649 49.72%,
+        #08141f 100%
+    );
+}
+.sub-section > div:last-of-type {
+    justify-self: end;
+    align-self: end;
+}
+.sub-section > div:last-of-type .sub-link {
+    text-align: center;
+}
+
+.sub-section h4 {
+    color: #00ed82;
+}
+.sub-section h3 {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: white;
+    min-width: 150px;
+    padding: 21px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 12px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.btn-outline {
+    background: none;
+    border: 2px solid white; 
+}
+.btn-outline:hover {
+    color: white;
+    border-color: #cccc;
+}
+
+.sub-link {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+
+/* SUB END */
+
+
+
+/* Category SECTION */
+.categories {
+    display: flex;
+    padding: 90px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.categories h4 {
+    color: #00ed82;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.text-xl {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.sub-text {
+    max-width: 850px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.categories .img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.categories .img > div {
+    height: 550px;
+    width: 300px;
+    position: relative;
+}
+
+.categories .img-grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(156.82deg,
+            rgba(0, 0, 0, 0.6) 4.58%,
+            rgba(0, 0, 0, 0) 69.61%),
+        linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .img-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.categories .img-1{
+    background: url(../img/cover-1.jpg) no-repeat center center / cover;
+}
+
+.categories .img-2{
+    background: url(../img/cover-2.jpg) no-repeat center center / cover;
+}
+
+.categories .img-3{
+    background: url(../img/cover-3.jpg) no-repeat center center / cover;
+}
+
+.categories .img-4{
+    background: url(../img/cover-4.jpg) no-repeat center center / cover;
+}
+
+/* Category SECTION END */
+
+
+/* LIVE START */
+
+.live {
+    background: #151515;
+    padding: 40px;
+}
+.live h4 {
+    color: #00ed82;
+    font-size: 15px;
+    font-weight: bold;
+}
+.live-xl{
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.live-text {
+    max-width: 850px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.live-legal {
+    font-size: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.live a {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.live-border {
+    border: 3px solid #1ce738;
+    border-radius: 16px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* LIVE END */
+
+
+
+/* LIVE SPORTS START */
+.live-sport {
+    background: url(../img/live-sports.jpg) no-repeat center center / cover;
+    height: 800px;
+    position: relative;
+}
+
+.live-s-xl {
+    font-size: 70px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+.live-s-sub {
+    max-width: 850px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.live-s-content {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    max-width: 550px;
+}
+
+.live-s-legal {
+    font-size: 10px;
+    color: wheat;
+    margin-top: 20px;
+}
+
+.live-sport-logo {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.live-sport-logo > div {
+    background: url(../img/network-logo-bg.png) no-repeat center center / cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live-sport-logo img {
+    width: 45px;
+
+}
+
+.live-sport {
+    background: url(../img/live-sports-small.jpg) no-repeat center center / cover;
+
+}
+.live-s-content{
+    top: 30px;
+    left: 30px;
+    margin-top: 60px;
+}
+
+
+/* LIVE SPORTS END */
+
+
+
+/* FOOTER START */
+footer {
+    background: whitesmoke;
+    color: #333
+}
+footer a {
+    color: white;
+}
+footer ul {
+    list-style: none;
+    padding: 40px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list .list-head {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    border-top: 1px wheat solid;
+    margin: 30px 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+/* FOOTER END */
+
+
+
+/* MEDIA QUERIES  */
+@media (max-width: 769px) {
+    .top-section .top-section img{
+        width: 200px;
+    }
+
+    .top-section .section-1 {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .top-section .heading-2 {
+        display: none;
+    }
+
+}
