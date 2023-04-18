@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap')@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap')@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -404,11 +404,11 @@ nav {
 }
 
 
-.live-s-content{
+/* .live-s-content{
     top: 30px;
     left: 30px;
     margin-top: 60px;
-}
+} */
 
 
 /* LIVE SPORTS END */
